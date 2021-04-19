@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="BaseballCoach" class="tp_Spring.BaseballCoach"></bean>
+	<bean id="FootballCoach" class="tp_Spring.FootBallCoach"></bean>
+
+	<bean id="team1" class="tp_Spring.Team">
+		<constructor-arg index="0" value="Wakandais"></constructor-arg>
+		<constructor-arg index="1" value="21"></constructor-arg>
+	</bean>
+
+	<bean id="team2" class="tp_Spring.Team">
+		<property name="nom" value="Asgardien"></property>
+		<property name="nbjoueurs" value="23"></property>
+	</bean>
+
+</beans>
